@@ -8,7 +8,7 @@ defmodule RepoWeb.ReposController.CreateTest do
   alias Repo.Error
 
   describe "create/2" do
-    test "returns the user's repos if the user exists", %{conn: conn} do
+    test "returns user's repos if user exists", %{conn: conn} do
       username = "librity"
 
       expect(ClientMock, :get_user_repos, fn _username -> {:ok, build_list(2, :repo_info)} end)
@@ -40,7 +40,7 @@ defmodule RepoWeb.ReposController.CreateTest do
              } = response
     end
 
-    test "returns an error if the user doesn't exist", %{conn: conn} do
+    test "returns an error if user doesn't exist", %{conn: conn} do
       bad_username = "'"
 
       expect(ClientMock, :get_user_repos, fn _username ->

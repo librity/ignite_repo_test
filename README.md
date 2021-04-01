@@ -81,6 +81,9 @@ Github client:
 
 - https://github.com/phoenixframework/phoenix
 - https://github.com/teamon/tesla
+- https://github.com/PSPDFKit-labs/bypass
+- https://github.com/dashbitco/mox
+- https://github.com/thoughtbot/ex_machina
 
 ## Docs <a name = "docs"></a>
 

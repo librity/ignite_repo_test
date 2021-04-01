@@ -13,4 +13,18 @@ defmodule Repo.Factory do
       stargazers_count: 1
     }
   end
+
+  def user_repos_body_factory(_attrs) do
+    ~s(
+      [
+        {
+          "id": 213098242,
+          "name": "aircnc_full_stack",
+          "description": "Rocket Seat - Omnistack Week 9 - Full stack web and mobile app that allows tech companies to host prospective programmers for a day.",
+          "html_url": "https://github.com/librity/aircnc_full_stack",
+          "stargazers_count": 3
+        }
+      ]
+    )
+  end
 end
