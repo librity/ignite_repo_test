@@ -18,6 +18,8 @@ config :repo, RepoWeb.Endpoint,
   pubsub_server: Repo.PubSub,
   live_view: [signing_salt: "bGoaefsO"]
 
+config :repo, RepoWeb.ReposController, github_adapter: Github.Client
+
 # Configures Elixir's Logger
 config :logger, :console,
   format: "$time $metadata[$level] $message\n",
