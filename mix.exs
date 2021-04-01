@@ -46,7 +46,9 @@ defmodule Repo.MixProject do
       {:credo, "~> 1.5", only: [:dev, :test], runtime: false},
       {:ex_machina, "~> 2.7.0"},
       {:tesla, "~> 1.4.0"},
-      {:hackney, "~> 1.17.0"}
+      {:hackney, "~> 1.17.0"},
+      {:bypass, "~> 2.1", only: :test},
+      {:mox, "~> 1.0", only: :test}
     ]
   end
 
